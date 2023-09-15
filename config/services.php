@@ -18,7 +18,6 @@ return [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
         'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
-        'scheme' => 'https',
     ],
 
     'postmark' => [
@@ -29,6 +28,11 @@ return [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
+    ],
+
+    'stripe' => [
+        'secret' => 'sk_test_51ImMYLL8CFL5l5Nj8ABACoXjon8HlNVSWRL2LiTNSCw2QBQeDusGYoskA0895tgPd8zVPwg2Y0jFxsZkYSjqCivj003dUkfPMc',
+        'version' => '2019-02-19',
     ],
 
 ];
